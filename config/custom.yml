@@ -1,2 +1,5 @@
 script:
   disable_dynamic: false
+  groovy:
+    sandbox:
+      enabled: true
