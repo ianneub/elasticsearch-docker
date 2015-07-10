@@ -2,6 +2,9 @@
 
 set -e
 
+# wait for weave network?
+sleep 5
+
 # Add elasticsearch as command if needed
 if [ "${1:0:1}" = '-' ]; then
   set -- elasticsearch "$@"
