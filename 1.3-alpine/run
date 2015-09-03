@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+chown -R 999:999 /usr/share/elasticsearch
+
+sleep 5
+
+exec s6-applyuidgid -u 999 -g 999 /usr/share/elasticsearch/bin/elasticsearch $@
