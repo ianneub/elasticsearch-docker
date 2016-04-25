@@ -16,6 +16,7 @@ RUN echo "deb http://packages.elasticsearch.org/elasticsearch/${ELASTICSEARCH_VE
 
 RUN apt-get update \
   && apt-get install elasticsearch=$ELASTICSEARCH_VERSION \
+  && /usr/share/elasticsearch/bin/plugin install elasticsearch/elasticsearch-cloud-aws/2.3.0 \
   && rm -rf /var/lib/apt/lists/*
 
 ENV PATH /usr/share/elasticsearch/bin:$PATH
