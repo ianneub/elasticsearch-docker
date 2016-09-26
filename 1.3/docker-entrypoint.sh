@@ -2,6 +2,8 @@
 
 set -e
 
+echo `whoami`
+
 ulimit -n 300000
 
 # wait for weave network?
