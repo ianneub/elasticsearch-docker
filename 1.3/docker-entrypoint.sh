@@ -2,6 +2,8 @@
 
 set -e
 
+ulimit -n 300000
+
 # wait for weave network?
 sleep 5
 
