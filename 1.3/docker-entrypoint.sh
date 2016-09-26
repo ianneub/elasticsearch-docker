@@ -2,9 +2,7 @@
 
 set -e
 
-echo `whoami`
-
-ulimit -n 300000
+ulimit -n 4096
 
 # wait for weave network?
 sleep 5
